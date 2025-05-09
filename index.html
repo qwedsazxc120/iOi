@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عيد ميلاد دانا</title>
+    <style>
+        body {
+            background-color: #FDEEF4; /* اللون الوردي الفاتح */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            direction: rtl; /* اتجاه الكتابة من اليمين لليسار */
+        }
+
+        /* تأثير الكتابة */
+        .writing-effect {
+            font-size: 18px;
+            font-weight: normal;
+            color: black;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 2px solid black; /* تأثير الكتابة */
+            animation: typing 10s steps(70) 1s forwards, blink 0.75s step-end infinite;
+            direction: rtl; /* الكتابة من اليمين لليسار */
+            text-align: right; /* ترتيب النص في الجهة اليمنى */
+        }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
+
+        @keyframes blink {
+            50% {
+                border-color: transparent;
+            }
+        }
+
+        /* تأثير العنوان الكبير */
+        .main-title {
+            color: black;
+            font-size: 40px;
+            text-align: center;
+            animation: scaleText 3s ease-in-out, moveUp 5s ease-in-out;
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        @keyframes scaleText {
+            0% {
+                transform: scale(0);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes moveUp {
+            0% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+            50% {
+                transform: translateY(-200px); /* العنوان يتحرك للأعلى */
+                opacity: 0.5;
+            }
+            100% {
+                transform: translateY(-300px); /* العنوان يصل للأعلى بشكل نهائي */
+                opacity: 0;
+            }
+        }
+
+        /* التأثير عند ظهور العنوان */
+        #main-header {
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* تخصيص شكل الألعاب النارية والبالونات */
+        .fireworks {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://media.giphy.com/media/3o7TKUOtZ3wzksVZZq/giphy.gif'); /* رابط صورة الألعاب النارية */
+            background-size: cover;
+            background-position: center;
+            z-index: -1;
+            animation: fireworks-animation 5s infinite;
+        }
+
+        .balloons {
+            position: absolute;
+            top: 25%;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://media.giphy.com/media/3o6gE5NtmjMB9cPMeI/giphy.gif'); /* رابط صورة البالونات */
+            background-size: cover;
+            background-position: center;
+            z-index: -1;
+            animation: balloons-animation 6s infinite;
+        }
+
+        /* تأثير الألعاب النارية */
+        @keyframes fireworks-animation {
+            0% { opacity: 0.8; }
+            50% { opacity: 1; }
+            100% { opacity: 0.8; }
+        }
+
+        /* تأثير البالونات */
+        @keyframes balloons-animation {
+            0% { opacity: 0.8; transform: translateY(10px); }
+            50% { opacity: 1; transform: translateY(-10px); }
+            100% { opacity: 0.8; transform: translateY(10px); }
+        }
+
+        /* تنسيق النص */
+        .message {
+            margin-top: 20px;
+            font-size: 18px;
+            text-align: right; /* ترتيب النص على الجهة اليمنى */
+            line-height: 1.8;
+            color: black;
+            padding: 10px;
+            max-width: 90%; /* تحديد حدود النص */
+            margin-left: auto;
+            margin-right: auto;
+            white-space: pre-line; /* لإظهار الأسطر الجديدة */
+            overflow-wrap: break-word; /* منع النص من الخروج من الحدود */
+        }
+
+    </style>
+</head>
+<body>
+
+<!-- خلفية الألعاب النارية -->
+<div class="fireworks"></div>
+<!-- خلفية البالونات -->
+<div class="balloons"></div>
+
+<!-- العنوان الكبير -->
+<header id="main-header">
+    <h1 class="main-title">HAPPY BIRTHDAY DANAH!!!</h1>
+</header>
+
+<!-- النص المكتوب بتأثير -->
+<section class="message">
+    <p class="writing-effect">
+        الى صاحبة السمو الملكي <br><br>
+        صباح او مساء الخير <br><br>
+        بسم الله الرحمن الرحيم والصلاه والسلام على نبينا وحبيبنا محمد <br><br>
+        السلام عليكم ورحمه الله وبركاته <br><br>
+        اما بعد… <br><br>
+        ابدا رسالتي بتهنئتك بحلول يوم ميلادك الموافق ٢٧/٦/٢٠٢٥. <br><br>
+        كل عام وأنت بألف خير، أمنياتي لك بأن يكون عامك هذا أفضل الأعوام، عام تحقيق الأمنيات والأحلام، عام خير وسعادة وحب وغرام، والسرور يدخل قلبك وتغادرك الأحزان والآلام، ويغمرك الحب والسلام. <br><br>
+        إقرأ المزيد على موضوع.كوم: <a href="https://mawdoo3.com/%D8%A7%D8%AC%D9%85%D9%84_%D9%83%D9%84%D8%A7%D9%85_%D9%81%D9%8A_%D8%B9%D9%8A%D8%AF_%D9%85%D9%8A%D9%84%D8%A7%D8%AF_%D8%B5%D8%AF%D9%8A%D9%82" target="_blank">رابط المقال</a> <br><br>
+        مع خالص التحيات: غلا
+    </p>
+</section>
+
+</body>
+</html>
